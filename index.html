@@ -12,10 +12,71 @@
         <h2>ITF Website</h2>
         <p>Week 14</p>
     </nav>
-    <div>
-        Enter number: <input type="number" id="myinput" value="0">
-        <button onclick="add()">+1</button>
+
+    <header>
+    <div class="header-content">
+        <img src="logo.jpg" alt="Bank Logo" class="header-img">
+        <div class="header-text">
+            <h1>ITF Simple Bank</h1>
+            <p>Welcome to my first HTML + CSS + JS website!</p>
+        </div>
     </div>
+    </header>
+
+
+    <main>
+    <section class="transaction">
+        <h3></h3>
+        <textarea id="history" rows="15" readonly></textarea>
+    </section>
+
+        <h2>Account Overview</h2>
+        <div class="container">
+
+            <section class="overview">
+                <h3>Account Information</h3>
+                <p><strong>Name:</strong> Suphawit Sookchan</p>
+                <p><strong>Type:</strong> Saving Account</p>
+
+                <h3>Balance Information</h3>
+            <label>Current account balance:</label>
+            <input type="number" id="accountBalance" value="1000"><br>
+            <label>Current cash balance:</label>
+            <input type="number" id="cashBalance" value="1000"><br>
+            <button onclick="changeBalance()">Change</button>
+
+            <h3>Bank Operation</h3>
+            <select id="operation">
+                <option value="deposit">Deposit</option>
+                <option value="withdraw">Withdraw</option>
+            </select>
+            <input type="number" id="opAmount" placeholder="0">
+            <button onclick="proceed()">Proceed</button>
+
+
+            </section>
+
+            <section class="tools">
+                <h3>Financial Tools</h3>
+                <p><strong>Currency Converter</strong></p>
+                <label>Input balance:</label>
+                <input type="number" placeholder="0"><br>
+
+                <label>Output balance:</label>
+                <output id="output">0</output><br>
+
+                <label>Input currency:</label>
+                <select>
+                    <option>USD</option>
+                    <option>THB</option>
+                </select><br>
+                <button onclick="convert()">Convert</button>
+
+                
+            </section>
+        </div>
+    </main>
+
     <script src="script.js"></script>
 </body>
 </html>

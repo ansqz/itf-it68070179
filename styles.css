@@ -1,10 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f9fb;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
 nav {
-    background-color: cornflowerblue;
+    background-color: #004080;
+    color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 10px 20px;
 }
 
-body {
-    margin: 0;
+/* ให้ 2 ส่วนอยู่ข้างกัน */
+.container {
+    display: flex;
+    justify-content: space-around; /* กระจายช่องว่างระหว่าง 2 ส่วน */
+    align-items: flex-start;
+
+}
+
+/* กล่องแต่ละฝั่ง */
+section {
+    background: white;
+    padding: 15px 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    width: 40%;  /* ความกว้างแต่ละฝั่ง */
+}
+
+
+/* หัวข้อ */
+h3 {
+    border-bottom: 3px solid #004080;
+    padding-bottom: 5px;
+}
+
+/* ปุ่ม */
+button {
+    background-color: #004080;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 8px;
+}
+button:hover {
+    background-color: #0059b3;
+}
+
+/* input */
+input, select {
+    margin: 5px 0;
+    padding: 5px;
+    width: 70%;
+}
+
+output {
+    display: inline-block;
+    width: 70%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+.transaction {
+    width: 90%;   /* หรือ 100% ก็ได้ */
+    margin: 20px auto;
+    background: white;
+    padding: 15px 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+#history {
+    width: 95%;   /* เต็มความกว้าง section */
+    height: 300px;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* ช่องว่างระหว่างรูปกับข้อความ */
+}
+
+.header-img {
+    width: 80px;   /* ปรับขนาดรูปตามต้องการ */
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%; /* ทำให้เป็นวงกลม ถ้าอยากได้แบบวงกลม */
 }
