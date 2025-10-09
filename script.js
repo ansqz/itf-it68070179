@@ -46,7 +46,7 @@ function updateHistory(message) {
 
 // ฟังก์ชันตัวอย่างสำหรับ Currency Converter
 function convert() {
-    const input = document.querySelector('.tools input').value;
+    const input = parseFloat(document.querySelector('.tools input').value);
     const output = document.getElementById('output');
     const currency = document.querySelector('.tools select').value;
 
